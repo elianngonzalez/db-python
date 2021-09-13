@@ -5,7 +5,8 @@ import pandas as pd
 import sqlite3
 
 # Crea una conexión a la base de datos SQLite
-con = sqlite3.connect("c:\\Users\\Elian Gonzalez\\Documents\\db\\vacunas")
+con = sqlite3.connect("C:\\Users\\Elian Gonzalez\\Desktop\\db-py\\db-python\\db\\vacunas")
+#
 # Usa read_sql_query de pandas para extraer el resultado
 # de la consulta a un DataFrame
 df = pd.read_sql_query('SELECT nombre, apellido,dni,domicilio, fecha_nac AS nacido_en FROM personas order by nombre', con)
