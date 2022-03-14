@@ -1,7 +1,7 @@
 '''accediendo a una base de datos de datos solo con python y sqlite3'''
 import sqlite3
 '''creo una coneccion con mi archivo de datos'''
-coneccion= sqlite3.connect('C:\\Users\\Elian Gonzalez\\Desktop\\db-py\\db-python\\db\\vacunas')
+coneccion= sqlite3.connect('./vacunas')
 '''creo un objeto cursor '''
 cur= coneccion.cursor()
 
